@@ -1,13 +1,13 @@
-REPO_HOME="$(cd "`dirname "$0"`"/../..; pwd)"
+REPO_HOME="$(cd "`dirname "$0"`"; pwd)"
 
 ACTIVATORJAR=$REPO_HOME/rfa-synthetic/rfa-activities/bin/Activator.jar
-JAR_FILE=$REPO_HOME/rfa-synthetic/rfa-spark/bin/rfa-spark.jar
+JAR_FILE=$REPO_HOME/bin/rfa-spark.jar
 ISDEBUG=true
 PATH_FILES=$REPO_HOME/rfa-synthetic/files
 MAIN_CLASS="br.ufrj.main.SyntheticRFA"
-WFDIR=$REPO_HOME/rfa-synthetic/rfa-spark
+WFDIR=$REPO_HOME
 MASTER_HOST=$1
-SWB_PY=$REPO_HOME/rfa-synthetic/rfa-activities/bin/swb.py
+SWB_PY=$REPO_HOME/rfa-activities/bin/swb.py
 OUTPUT_DIR=${WFDIR}/out
 INPUT_FILE_PATH=${WFDIR}/input.dataset
 
@@ -22,7 +22,7 @@ ARGS="$MASTER_HOST $TOTAL_CORES $INPUT_FILE_PATH $TAG_NAME $OUTPUT_DIR $BALANCED
 # if number of args is wrong
 if [ $# != 3 ]; then
   echo "Usage: run.sh <spark-master-url> <num-executors> <total-executor-cores>"
-  echo "Please check https://github.com/vssousa/d-chiron/tree/master/rfa-synthetic/rfa-spark"
+  echo "Please check https://github.com/hpcdb/RFA-Spark"
   exit 1
 fi
 
