@@ -1,5 +1,18 @@
 # Risers Fatigue Analysis Synthetic - Spark
 
+## Risers Fatigue Analysis synthetic workflow
+This is our case study. It is based on a real workflow used in the oil and gas domain. The RFA workflow is composed of seven activites that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
+
+![alt text](https://raw.githubusercontent.com/hpcdb/RFA-Spark/master/rfa-image.png "Risers Fatigue Analysis workflow")
+
+- Data Gathering - split one tuple into many tuples
+- Preprocessing - map
+- Stress Analysis - map
+- Stress Critical Case Selection - filter
+- Curvature Critical Case Selection - filter
+- Calculate Fatigue Life - join
+- Compress Results - reduce tuples
+
 ## How to Run
 ### Dependencies:
 - [Apache Spark Cluster](https://spark.apache.org/docs/1.1.0/cluster-overview)
@@ -21,18 +34,18 @@ $ vi input.dataset
 ID;SPLITMAP;SPLITFACTOR;MAP1;MAP2;FILTER1;F1;FILTER2;F2;REDUCE;REDUCEFACTOR
 1;5;8;5;5;5;50;5;50;5;4
 ```
-- Fields:
- - **ID**: Entry identifier
- - **SPLITMAP**: Average Task Cost in Uncompress activity (seconds)
- - **SPLITFACTOR**: Number of entries in the input dataset after uncompression
- - **MAP1**: Average Task Cost in Pre-Processing activity (seconds)
- - **MAP2**: Average Task Cost in Analyze Riser sactivity (seconds)
- - **FILTER1**:Average Task Cost in Calculate Wear and Tear activity (seconds)
- - **F1**: Amount of entries for Calculate Wear and Tear activity to filter in % (i.e., Percentage that will continue in the flow)
- - **FILTER2**:Average Task Cost in Analyze Position activity (seconds)
- - **F2**: Amount of entries for Analyze Position activity to filter in %(i.e., Percentage that will continue in the flow)
- - **REDUCE**: Average Task Cost in Compress Results activity (seconds)
- - **REDUCEFACTOR**:  Number of compressed output entries
+- **Fields**:
+     - **ID**: Entry identifier
+     - **SPLITMAP**: Average Task Cost in Uncompress activity (seconds)
+     - **SPLITFACTOR**: Number of entries in the input dataset after uncompression
+     - **MAP1**: Average Task Cost in Pre-Processing activity (seconds)
+     - **MAP2**: Average Task Cost in Analyze Riser sactivity (seconds)
+     - **FILTER1**:Average Task Cost in Calculate Wear and Tear activity (seconds)
+     - **F1**: Amount of entries for Calculate Wear and Tear activity to filter in % (i.e., Percentage that will continue in the flow)
+     - **FILTER2**:Average Task Cost in Analyze Position activity (seconds)
+     - **F2**: Amount of entries for Analyze Position activity to filter in %(i.e., Percentage that will continue in the flow)
+     - **REDUCE**: Average Task Cost in Compress Results activity (seconds)
+     - **REDUCEFACTOR**:  Number of compressed output entries
 
 ### Run
 - [Start Apache Spark Cluster](https://spark.apache.org/docs/1.1.0/cluster-overview.html)
