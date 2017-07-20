@@ -7,7 +7,7 @@ PATH_FILES=$REPO_HOME/rfa-synthetic/files
 MAIN_CLASS="br.ufrj.main.SyntheticRFA"
 WFDIR=$REPO_HOME
 MASTER_HOST=$1
-SWB_PY=$REPO_HOME/rfa-activities/bin/swb.py
+SWB_PY=$REPO_HOME/rfa-synthetic/rfa-activities/bin/swb.py
 OUTPUT_DIR=${WFDIR}/out
 INPUT_FILE_PATH=${WFDIR}/input.dataset
 
