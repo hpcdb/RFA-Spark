@@ -9,17 +9,17 @@
 - [How to Build](#how-to-build)
 
 ## Risers Fatigue Analysis synthetic workflow
-Risers Fatigue Analysis (RFA) workflow is a real case study in the Oil and Gas domain. It is composed of seven activites that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
+Risers Fatigue Analysis (RFA) workflow is a real case study in the Oil and Gas domain. It is composed of seven activities that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
 
 ![alt text](rfa-synthetic/rfa-image.png "Risers Fatigue Analysis workflow")
-
-- Uncompress Input Dataset - split one tuple into many tuples
-- Preprocessing - map
-- Analyze Risers - map
-- Calculate Wear and Tear - filter
-- Analyze Position - filter
-- Join Results - join
-- Compress Results - reduce tuples
+- Activites
+     - Uncompress Input Dataset - split one tuple into many tuples
+     - Preprocessing - map
+     - Analyze Risers - map
+     - Calculate Wear and Tear - filter
+     - Analyze Position - filter
+     - Join Results - join
+     - Compress Results - reduce tuples
 
 - [RFA activites implementation (source code)](rfa-synthetic/rfa-activities)
 - [RFA activites implementation (jar)](rfa-synthetic/rfa-activities/bin)
