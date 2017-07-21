@@ -2,7 +2,7 @@
 ## Content
 - [Risers Fatigue Analysis synthetic workflow](#risers-fatigue-analysis-synthetic-workflow)
      - [RFA activites implementation (source code)](rfa-synthetic/rfa-activities)
-     - [RFA activites implementation (jar)](RFA-Spark/rfa-synthetic/rfa-activities/bin)
+     - [RFA activites implementation (jar)](rfa-synthetic/rfa-activities/bin)
      - [RFA files](rfa-synthetic/files)
 - [How to Run](#how-to-run)
 - [Source Code](rfa-spark-project)
@@ -22,7 +22,7 @@ Risers Fatigue Analysis (RFA) workflow is a real case study in the Oil and Gas d
 - Compress Results - reduce tuples
 
 - [RFA activites implementation (source code)](rfa-synthetic/rfa-activities)
-- [RFA activites implementation (jar)](RFA-Spark/rfa-synthetic/rfa-activities/bin)
+- [RFA activites implementation (jar)](rfa-synthetic/rfa-activities/bin)
 - [RFA files](rfa-synthetic/files)
 
 ## How to Run
