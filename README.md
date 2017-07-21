@@ -1,4 +1,5 @@
 # Risers Fatigue Analysis Synthetic - Spark
+In this repository, you find a synthetic implementation on Apache Spark framework of Riser Fatigue Analysis (RFA) scientific workflow based on a real case study in Oil and Gas domain. This implementation use the natively available Process library in Spark to call external black-box applications.
 ## Content
 - [Risers Fatigue Analysis synthetic workflow](#risers-fatigue-analysis-synthetic-workflow)
      - [RFA activites implementation (source code)](rfa-synthetic/rfa-activities)
