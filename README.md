@@ -1,5 +1,5 @@
 # Risers Fatigue Analysis Synthetic - Spark
-In this repository, you find what is necessary to build and execute 
+## Content
 - [Risers Fatigue Analysis synthetic workflow](#risers-fatigue-analysis-synthetic-workflow)
      - [RFA activites implementation (source code)](rfa-synthetic/rfa-activities)
      - [RFA activites implementation (jar)](rfa-synthetic/rfa-activities/bin)
