@@ -6,23 +6,22 @@
 - [How to Build](#how-to-build)
 
 ## Risers Fatigue Analysis synthetic workflow
-This is our case study. It is based on a real workflow used in the oil and gas domain. The RFA workflow is composed of seven activites that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
+Risers Fatigue Analysis (RFA) workflow is a real case study in the Oil and Gas domain. It is composed of seven activites that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
 
 ![alt text](rfa-synthetic/rfa-image.png "Risers Fatigue Analysis workflow")
 
-- Data Gathering - split one tuple into many tuples
+- Uncompress Input Dataset - split one tuple into many tuples
 - Preprocessing - map
-- Stress Analysis - map
-- Stress Critical Case Selection - filter
-- Curvature Critical Case Selection - filter
-- Calculate Fatigue Life - join
+- Analyze Risers - map
+- Calculate Wear and Tear - filter
+- Analyze Position - filter
+- Join Results - join
 - Compress Results - reduce tuples
 
 ## How to Run
 ### Dependencies:
-- [Apache Spark Cluster](https://spark.apache.org/docs/1.1.0/cluster-overview)
+- [Apache Spark Cluster](https://spark.apache.org/docs/latest/cluster-overview.html)
 - [Python2](https://www.python.org/downloads/)
-- [Bash](https://www.gnu.org/software/bash/)
 
 ### Setup and configuration:
 Clone repository:
@@ -53,7 +52,7 @@ ID;SPLITMAP;SPLITFACTOR;MAP1;MAP2;FILTER1;F1;FILTER2;F2;REDUCE;REDUCEFACTOR
      - **REDUCEFACTOR**:  Number of compressed output entries
 
 ### Run
-- [Start Apache Spark Cluster](https://spark.apache.org/docs/1.1.0/cluster-overview.html)
+- [Start Apache Spark Cluster](https://spark.apache.org/docs/latest/cluster-overview.html)
 - Set SPARK_HOME environment variable
 ```sh
 $ export SPARK_HOME=/path/to/spark
