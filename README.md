@@ -1,9 +1,9 @@
 # Risers Fatigue Analysis Synthetic - Spark
 ## Content
-- [Risers Fatigue Analysis synthetic workflow](risers-fatigue-analysis-synthetic-workflow)
-- [How to Run](how-to-run)
+- [Risers Fatigue Analysis synthetic workflow](#risers-fatigue-analysis-synthetic-workflow)
+- [How to Run](#how-to-run)
 - [Source Code](rfa-spark-project)
-- [How to Build](how-to-build)
+- [How to Build](#how-to-build)
 
 ## Risers Fatigue Analysis synthetic workflow
 This is our case study. It is based on a real workflow used in the oil and gas domain. The RFA workflow is composed of seven activites that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
