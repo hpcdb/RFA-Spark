@@ -1,18 +1,18 @@
 # Risers Fatigue Analysis Synthetic - Spark
-## Content
+In this repository, you find what is necessary to build and execute 
 - [Risers Fatigue Analysis synthetic workflow](#risers-fatigue-analysis-synthetic-workflow)
      - [RFA activites implementation (source code)](rfa-synthetic/rfa-activities)
      - [RFA activites implementation (jar)](rfa-synthetic/rfa-activities/bin)
      - [RFA files](rfa-synthetic/files)
 - [How to Run](#how-to-run)
-- [Source Code](rfa-spark-project)
+- [Spark Implementation Source Code](rfa-spark-project)
 - [How to Build](#how-to-build)
 
 ## Risers Fatigue Analysis synthetic workflow
 Risers Fatigue Analysis (RFA) workflow is a real case study in the Oil and Gas domain. It is composed of seven activities that receive input tuples, perform complex calculations based on them, and transform tuples into resulting output tuples.
 
 ![alt text](rfa-synthetic/rfa-image.png "Risers Fatigue Analysis workflow")
-- Activites
+- Activities
      - Uncompress Input Dataset - split one tuple into many tuples
      - Preprocessing - map
      - Analyze Risers - map
