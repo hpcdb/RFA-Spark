@@ -28,7 +28,7 @@ Risers Fatigue Analysis (RFA) workflow is a real case study in the Oil and Gas d
 
 ## How to Run
 ### Dependencies:
-- [Apache Spark Cluster](https://spark.apache.org/docs/latest/cluster-overview.html)
+- [Apache Spark Cluster (Version 1.5+ or 2+)](https://spark.apache.org/docs/latest/cluster-overview.html)
 - [Python2](https://www.python.org/downloads/)
 
 ### Setup and configuration:
